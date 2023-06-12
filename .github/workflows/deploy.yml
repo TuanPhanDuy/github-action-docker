@@ -20,7 +20,7 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
   test:
-    #needs: login
+    needs: login
     environment: testing
     runs-on: ubuntu-latest
     # container:
