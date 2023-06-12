@@ -21,7 +21,7 @@ jobs:
   #         password: ${{ secrets.DOCKERHUB_TOKEN }}
   test:
     #needs: login
-    environment: docker
+    environment: testing
     runs-on: ubuntu-latest
     # container:
     #   image: node:16
